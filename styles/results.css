@@ -1,0 +1,233 @@
+.page-results {
+  width: 100vw;
+  height: auto;
+  background-color: #ffffff;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.page-results .title {
+  display: block;
+  padding-top: 20px;
+  margin-left: 40px;
+  margin-bottom: 80px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: #A1D7F8;
+}
+
+.page-results .buttons {
+  display: block;
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.page-results .buttons button {
+  display: inline-block;
+  margin: 20px auto;
+  width: 250px;
+  height: 50px;
+  color: #A1D7F8;
+  border-radius: 10px;
+  box-shadow: none;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
+}
+
+.page-results .buttons .button-today {
+  margin-right: 20px;
+}
+
+.page-results .buttons .button-infos {
+  margin-left: 20px;
+}
+
+.page-results .buttons button.active {
+  background-color: #A1D7F8;
+  color: #fefefe;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
+}
+
+/****************************************
+
+ WEATHER OF TODAY DISPLAY
+
+ ****************************************/
+
+.page-results .weather-today.active {
+  display: block;
+  width: 90vw;
+  height: auto;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.page-results .weather-today {
+  display: none;
+}
+
+.page-results .weather-today .today-global {
+  display: block;
+  border-radius: 10px;
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #A1D7F8;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 3px 7px rgba(0, 0, 0, 0.24);
+}
+
+.page-results .weather-today .today-element {
+  display: inline-block;
+  width: 12%;
+  height: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.page-results .weather-today .today-element.date {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.page-results .weather-today .today-element.sun {
+  width: 30%;
+}
+
+.page-results .spotify-player {
+  display: block;
+  margin: 100px auto 0 auto;
+}
+
+.page-results .spotify-player p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #A1D7F8;
+  text-align: left;
+  display: block;
+}
+
+.page-results .spotify-player iframe {
+  display: block;
+  margin: 50px 50px 0 0;
+}
+
+/*********************************************************
+
+WEATHER FORECAST OF WEEK DISPLAY
+
+*****************************************************/
+
+.page-results .week-results {
+  display: none;
+}
+
+.page-results .week-results.active {
+  display: block;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.page-results .week-results.active .week-result {
+  display: inline-block;
+  width: 20vw;
+  height: auto;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #A1D7F8;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 3px 7px rgba(0, 0, 0, 0.24);
+}
+
+.page-results .week-results .week-element {
+  display: inline-block;
+  width: 100px;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.page-results .week-results .week-element.date {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/*********************************************************
+
+MORE INFOS DISPLAY
+
+*****************************************************/
+
+.page-results .more-infos {
+  display: none;
+}
+
+.page-results .more-infos .title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #A1D7F8;
+  text-align: left;
+  display: block;
+}
+
+.page-results .more-infos.active {
+  display: block;
+  width: 90vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+.page-results .more-infos .info {
+  display: inline-block;
+  width: 200px;
+  height: 70px;
+  background-color: #A1D7F8;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.page-results .more-infos .info h2 {
+  display: block;
+  width: 100%;
+  height: auto;
+  color: #fefefe;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.page-results .more-infos .info span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  height: auto;
+  color: #fefefe;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+}

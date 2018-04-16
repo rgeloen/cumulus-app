@@ -1,0 +1,120 @@
+.homepage {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #A1D7F8;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.homepage .homepage-sun {
+  display: inline-block;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 250px;
+  animation-name: sun;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes sun {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 200px) and (max-width: 830px) {
+  .homepage .homepage-sun {
+    display: none;
+  }
+}
+
+.homepage .title {
+  display: block;
+  padding-top: 130px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.homepage .title h1 {
+  margin-bottom: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: #fefefe;
+}
+
+.homepage .title h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #fefefe;
+}
+
+.homepage .city {
+  display: block;
+  width: 30vw;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+.homepage .city .hidden {
+  opacity: 0;
+}
+
+.homepage .city .input-city {
+  display: block;
+  width: 40vw;
+  margin: 0 auto;
+  background-color: #A1D7F8;
+  padding: 10px 10px 10px 5px;
+  border: none;
+  border-bottom: 1px solid #fefefe;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #fefefe;
+  transition: 0.3s ease all;
+}
+
+
+.homepage .city label {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #fefefe;
+  pointer-events: none;
+  top: 10px;
+  left: 5px;
+  transition: 0.2s ease all;
+}
+
+.homepage .city .input-city:focus {
+  outline: none;
+  border-bottom: solid 3px #fefefe;
+  transition: 0.3s ease all;
+}
+
+.homepage .city .input-city:focus~label, .homepage .city .input-city:valid~label {
+  top: -20px;
+  font-size: 14px;
+  color: #fefefe;
+  transition: 0.2s ease all;
+}
