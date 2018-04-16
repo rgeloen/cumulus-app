@@ -46,4 +46,4 @@ I will soon do an AJAX request in order to make the result page appear with an a
 *I'm so cool.*
 
 
-# THANK YOU
+# Thanks !
